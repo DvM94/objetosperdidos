@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <title>Objetos perdidos - {{title}}</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="/img/logo.png" alt="Logo">
+            <h1>O<span>bjetos</span> P<span>erdidos</span></h1>
+        </a>
+        <menu class="menu">
+            {{#unless session.logged}}
+            <a href="/usuario/nuevo" class="button">Registrarse</a>
+            <a href="/usuario/acceso" class="button">Acceder</a>
+            {{else}}
+            <p>¡Buenas {{session.user}}!</p>
+            <a href="/usuario/perfil" class="button">Ver perfil</a>
+            {{/unless}}
+        </menu>
+    </header>
+
+    {{{body}}}
+
+    <footer>
+        <p>© <a href="https://infinito.estelock.repl.co/cv/daniel.html" target="blank">Daniel Villar</a></p>
+    </footer>
+</body>
+
+</html>

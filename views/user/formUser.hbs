@@ -1,0 +1,36 @@
+<form method="POST" action="/usuario/{{link}}" class="center form window">
+  <h1>{{title}} usuario:</h1>
+  {{#if userName}}
+  <input type="text" id="name" name="name" value="{{ us.name }}{{name}}" placeholder="Nombre" class="{{readonly}}" {{readonly}}>
+  {{#if errors.name}}
+  <div class="error">{{errors.name}}</div>
+  {{/if}}
+  <input type="tel" id="phone" name="phone" value="{{ us.phone }}{{phone}}" placeholder="Teléfono" class="{{readonly}}" {{readonly}}>
+  {{#if errors.phone}}
+  <div class="error">{{errors.phone}}</div>
+  {{/if}}
+  {{/if}}
+  <input type="text" id="email" name="email" value="{{ us.email }}{{email}}" placeholder="Email" class="{{readonly}}" {{readonly}}>
+  {{#if errors.email}}
+  <div class="error">{{errors.email}}</div>
+  {{/if}}
+  {{#if errors.repeat}}
+  <div class="error">{{errors.repeat}}</div>
+  {{/if}}
+  {{#if noEmail}}
+  <div class="error">Ese correo no está en nuestra base de datos</div>
+  {{/if}}
+  {{#if noActivate}}
+  <div class="error">La cuenta asociada a ese correo no ha sido verificada</div>
+  {{/if}}
+  <input type="password" id="password" name="password" value="{{ us.password }}" placeholder="Contraseña">
+  {{#if errors.password}}
+  <div class="error">{{errors.password}}</div>
+  {{/if}}
+  {{#if wrongPassword}}
+  <div class="error">La contraseña es incorrecta. Si la ha olvidado, puede solicitar una nueva pulsando en cambiar contraseña:</div>
+  <a href="/usuario/cambiarcontrasenia/{{ us.email }}" class="button">Cambiar contraseña</a>
+  {{/if}}
+  <input type="submit" value="{{value}}">
+  <a href="/" class="button back">Volver</a>
+</form>

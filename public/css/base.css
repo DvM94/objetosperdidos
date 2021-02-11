@@ -1,0 +1,368 @@
+body {
+  background-image: url("../img/fondo.jpg");
+  background-size: 200px;
+  color: #222;
+  font-family: Calibri;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  position: fixed;
+  padding: 0 20px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header .logo h1 {
+  line-height: .8;
+  text-align: left;
+  margin: 0;
+  width: 60px;
+  display: inline;
+  font-size: 1.8em;
+}
+
+header .logo h1 span {
+  font-size: .5em;
+}
+
+header .menu {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+header .menu a {
+  margin: 0 0 0 10px;
+  font-size: .8em;
+  height: 25px;
+}
+
+header .menu p {
+  margin-left: 20px;
+  width: 60px;
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.center {
+  transform: translate(-50%, -45%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+
+.window {
+  background-color: white;
+  padding: 20px 20px;
+  width: 300px;
+  border-radius: 0 30px;
+  box-shadow: 5px 5px 4px #222;
+}
+
+.button {
+  margin: 10px auto 5px auto;
+  height: 30px;
+  background-color: #b7e5ff;
+  color: white;
+  border: 1px solid #222;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #222;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #222;
+  cursor: pointer;
+  display: block;
+  padding: 3px 10px 0 10px;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #8accf1;
+}
+
+.twobuttons {
+  display: flex;
+}
+
+.back {
+  background-color: white;
+  color: #b7e5ff;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.back:hover {
+  background-color: #8accf1;
+}
+
+.warning {
+  background-color: #d31111;
+  color: white;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.warning:hover {
+  background-color: #222;
+}
+
+.secondHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  top: 70px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 20px 0 10px;
+}
+
+.secondHeader-searcher {
+  width: 260px;
+}
+
+.secondHeader-searcher input[type='text'] {
+  position: relative;
+  bottom: 2px;
+  margin-right: 5px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #222;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #222;
+}
+
+.secondHeader-searcher input[type='button'] {
+  display: inline;
+  padding-top: 0;
+}
+
+.secondHeader a {
+  margin: 10px 0 0 0;
+}
+
+.home p {
+  font-size: 1.5em;
+}
+
+.home a {
+  width: 200px;
+}
+
+.form h1 {
+  margin: 5px 0;
+  font-size: 1.3em;
+}
+
+.form input {
+  margin: 5px 0 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #222;
+}
+
+.form textarea {
+  margin-top: 5px 0;
+  border: 1px solid #222;
+  resize: none;
+}
+
+.form .image {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.form .image label[for="image"] {
+  margin: 0;
+}
+
+.form .image .imageInput {
+  width: 110px;
+  overflow: hidden;
+}
+
+.form .image input[type="file"] {
+  border: none;
+  width: 250px;
+  position: relative;
+  right: 142px;
+}
+
+.form input[type="submit"] {
+  margin: 10px auto 5px auto;
+  height: 30px;
+  background-color: #b7e5ff;
+  color: white;
+  border: 1px solid #222;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #222;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px #222;
+  cursor: pointer;
+  width: auto;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #8accf1;
+}
+
+.form .error {
+  color: #d31111;
+  margin-bottom: 5px;
+}
+
+.form .readonly {
+  color: #555;
+}
+
+.form hr {
+  margin: 20px 0 10px 0;
+}
+
+.cards {
+  position: relative;
+  top: 140px;
+  padding-bottom: 70px;
+}
+
+.cards .card {
+  margin: 0 auto 20px auto;
+  display: flex;
+}
+
+.cards .card-photo {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  min-height: 100px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 3px 3px 4px #222;
+}
+
+.cards .card-info {
+  width: 160px;
+}
+
+.cards .card-info p {
+  margin: 0 0 5px 0;
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+
+.cards .card-info-tittle {
+  font-weight: bolder;
+}
+
+@media (min-width: 600px) {
+  header {
+    padding: 0 60px;
+  }
+  header .logo h1 {
+    width: auto;
+  }
+  header .menu {
+    width: fit-content;
+  }
+  header .menu a {
+    margin: 10px auto 5px auto;
+    height: 30px;
+    background-color: #b7e5ff;
+    color: white;
+    border: 1px solid #222;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #222;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px #222;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+  }
+  header .menu a:hover {
+    background-color: #8accf1;
+  }
+  header .menu p {
+    width: auto;
+  }
+  .secondHeader {
+    padding: 0 60px 0 60px;
+  }
+  .secondHeader-searcher {
+    width: 360px;
+  }
+  .secondHeader-searcher input[type='text'] {
+    width: 250px;
+  }
+  .window {
+    width: 500px;
+  }
+  .form textarea {
+    width: 450px;
+  }
+  .form .image .imageInput {
+    width: 300px;
+  }
+  .form .image input[type="file"] {
+    width: 450px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards .card {
+    margin: 0 20px 20px 20px;
+    width: 400px;
+    display: flex;
+  }
+  .cards .card-photo {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    min-height: 150px;
+  }
+  .cards .card-info {
+    width: 260px;
+  }
+  .cards .card-info p {
+    font-size: 1em;
+  }
+}

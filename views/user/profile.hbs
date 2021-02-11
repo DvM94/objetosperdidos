@@ -1,0 +1,30 @@
+<form method="POST" action="/usuario/perfil" class="center form window">
+  <h1>Modificar usuario:</h1>
+  <input type="text" id="email" name="email" value="{{session.email}}" placeholder="Email" class="readonly" readonly>
+  {{#if errors.email}}
+  <div class="error">{{errors.email}}</div>
+  {{/if}}
+  {{#if errors.repeat}}
+  <div class="error">{{errors.repeat}}</div>
+  {{/if}}
+  <input type="text" id="name" name="name" value="{{session.user}}" placeholder="Nombre">
+  {{#if errors.name}}
+  <div class="error">{{errors.name}}</div>
+  {{/if}}
+  <input type="tel" id="phone" name="phone" value="{{session.phone}}" placeholder="Teléfono">
+  {{#if errors.phone}}
+  <div class="error">{{errors.phone}}</div>
+  {{/if}}
+  {{#if ok}}
+  <div>{{ok}}</div>
+  {{/if}}
+  <input type="submit" value="Modificar">
+  <hr>
+  <h1>Eliminar usuario:</h1>
+  <a href="/usuario/confirmar" class="button warning">Borrar cuenta</a>
+  <hr>
+  <div class="twobuttons">
+    <a href="/usuario/cerrarsesion" class="button">Cerrar sesión</a>
+    <a href="/" class="button back">Volver</a>
+  </div>
+</form>

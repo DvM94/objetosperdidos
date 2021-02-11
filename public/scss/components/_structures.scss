@@ -1,0 +1,68 @@
+body{
+  background-image: url("../img/fondo.jpg");
+  background-size: 200px;
+  color: $Black;
+  font-family: Calibri;
+  text-align: center;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: $WhiteT;
+  z-index: 10;
+  position: fixed;
+  padding: 0 20px;
+  .logo{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    img{
+      height: 50px;
+      margin-right: 10px;
+    }
+    h1{
+      line-height: .8;
+      text-align: left;
+      margin: 0;
+      width: 60px;
+      display: inline;
+      font-size: 1.8em;
+      span{
+        font-size: .5em;
+      }
+    }
+  }
+  .menu{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+    a{
+      margin: 0 0 0 10px;
+      font-size: .8em;
+      height: 25px;
+    }
+    p{
+      margin-left: 20px;
+      width: 60px;
+    }
+  }
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  background-color: $WhiteT;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  padding-top: 5px;
+  p{
+    margin: 0;
+  }
+}

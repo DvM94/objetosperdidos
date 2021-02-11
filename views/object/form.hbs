@@ -1,0 +1,43 @@
+<form method="POST" action="/objeto/nuevo" enctype="multipart/form-data" class="center form window">
+  <h1>Datos personales</h1>
+  <input type="text" id="email" name="email" value="{{ session.email }}" placeholder="Email" readonly>
+  {{#if errors.name}}
+  <div class="error">{{errors.name}}</div>
+  {{/if}}
+  <input type="tel" id="phone" name="phone" value="{{ session.phone }}" placeholder="Teléfono" readonly>
+  {{#if errors.phone}}
+  <div class="error">{{errors.phone}}</div>
+  {{/if}}
+  <h1>Introduce datos del objeto</h1>
+  <input type="text" id="title" name="title" value="{{ obj.title }}" placeholder="Nombre">
+  {{#if errors.title}}
+  <div class="error">{{errors.title}}</div>
+  {{/if}}
+  <input type="text" id="location" name="location" value="{{ obj.location }}" placeholder="Localización">
+  {{#if errors.location}}
+  <div class="error">{{errors.location}}</div>
+  {{/if}}
+  <div>
+    <label for="description">Descripción:</label>
+    <span id="character">0</span>/100 caracteres
+  </div>
+  <textarea name="description" id="description" cols="32" rows="4" maxlength="100">{{ obj.description }}</textarea>
+  {{#if errors.description}}
+  <div class="error">{{errors.description}}</div>
+  {{/if}}
+  <div>
+    <div class="image">
+      <label for="image" class="button">Subir imagen</label>
+      <div class="imageInput">
+        <input type="file" id="image" name="image" accept=".jpg,.png,.jpeg*">
+      </div>
+    </div>
+    {{#if errors.image}}
+    <div class="error">{{errors.image}}</div>
+    {{/if}}
+  </div>
+  <input type="submit" value="Registrar">
+  <a href="/" class="button back">Volver</a>
+</form>
+
+<script src="/js/scriptform.js"></script>

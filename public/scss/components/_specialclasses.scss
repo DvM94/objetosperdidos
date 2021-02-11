@@ -1,0 +1,88 @@
+.home{
+  p{
+    font-size: 1.5em;
+  }
+  a{
+    width: 200px;
+  }
+}
+
+.form{
+  h1{
+    margin: 5px 0;
+    font-size: 1.3em;
+  }
+  input{
+    margin: 5px 0 10px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $Black;
+  }
+  textarea{
+    margin-top: 5px 0;
+    border: 1px solid $Black;
+    resize: none;
+  }
+  .image{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    label[for="image"]{
+      margin: 0;
+    }
+    .imageInput{
+      width: 110px;
+      overflow: hidden;
+    }
+      input[type="file"]{
+      border: none;
+      width: 250px;
+      position: relative;
+      right: 142px;
+    }
+  }
+  input[type="submit"]{
+    @include button;
+    width: auto;
+  }
+  .error{
+    color: $Red;
+    margin-bottom: 5px;
+  }
+  .readonly{
+    color: $Grey;
+  }
+  hr{
+    margin: 20px 0 10px 0;
+  }
+}
+
+.cards{
+  position: relative;
+  top: 140px;
+  padding-bottom: 70px;
+  .card{
+    margin: 0 auto 20px auto;
+    display: flex;
+    &-photo{
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      min-height: 100px;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 3px 3px 4px $Black;
+    }
+    &-info{
+      width: 160px;
+      p{
+        margin: 0 0 5px 0;
+        padding-left: 10px;
+        font-size: 0.9em;
+      }
+      &-tittle{
+        font-weight: bolder;
+      }
+    }
+  }
+}

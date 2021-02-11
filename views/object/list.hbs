@@ -1,0 +1,22 @@
+<nav class="secondHeader">
+    <div class="secondHeader-searcher">
+        <input type="text" id="title" name="title" placeholder="Buscador">
+        <input type="button" class="button" id="search" value="Buscar">
+    </div>
+    <a href="/" class="button back">Volver</a>
+</nav>
+
+<main class="cards" id="cards">
+    {{#each lostObjects}}
+    <div class="window card">
+        <img src="{{image}}" alt="Objeto" class="card-photo">
+        <div class="card-info">
+            <p class="card-info-tittle">{{title}}</p>
+            <p>{{location}} | {{date}}</p>
+            <p class="card-info-description">{{description}}</p>
+        </div>
+    </div>
+    {{/each}}
+</main>
+
+<script src="/js/scriptlist.js"></script>

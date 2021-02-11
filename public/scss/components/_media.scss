@@ -1,0 +1,71 @@
+@media (min-width: 600px) {
+
+  header{
+    padding: 0 60px;
+    .logo{
+      h1{
+        width: auto;
+      }
+    }
+    .menu{
+      width: fit-content;
+      a{
+        @include button;
+        margin: 0 0 0 10px;
+      }
+      p{
+        width: auto;
+      }
+    }
+  }
+
+  .secondHeader{
+    padding: 0 60px 0 60px;
+    &-searcher{
+      width: 360px;
+      input[type='text']{
+        width: 250px;
+      }
+    }
+  }
+
+  .window{
+    width: 500px;
+  }
+
+  .form{
+    textarea{
+      width: 450px;
+    }
+    .image{
+      .imageInput{
+        width: 300px;
+      }
+      input[type="file"]{
+        width: 450px;
+      }
+    }
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+      margin: 0 20px 20px 20px;
+      width: 400px;
+      display: flex;
+      &-photo{
+        width: 150px;
+        min-width: 150px;
+        height: 150px;
+        min-height: 150px;
+      }
+      &-info{
+        width: 260px;
+        p{
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

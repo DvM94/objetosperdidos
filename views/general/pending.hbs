@@ -1,0 +1,18 @@
+<main class="center window">
+  {{#if register}}
+  <h2>¡Gracias por crear una cuenta!</h2>
+  <p>Te hemos enviado un correo de confirmación.</p>
+  <p>Recuerda que la cuenta no seré activada hasta que se haga click en el enlace del correo.</p>
+  {{/if}}
+  {{#if changeEmail}}
+  <h2>¡Sentimos que hayas olvidado la contraseña!</h2>
+  <p>Te hemos enviado un correo desde deonde crear una nueva.</p>
+  {{/if}}
+  {{#if deleteAcount}}
+  <h2>¡Sentimos que hayas cancelado tu cuenta!</h2>
+  <p>Aunque no puedes añadir nuevos objetos, al menos todavía puedes seguir consultando los que ya están.</p>
+  {{/if}}
+   <div class="buttons">
+    <a href="/" class="button back">Inicio</a>
+  </div>
+</main>

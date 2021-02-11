@@ -1,0 +1,19 @@
+//Colores
+$Blue:rgb(183, 229, 255);
+$DarkBlue:rgb(138, 204, 241);
+$Red:rgb(211, 17, 17);
+$Black:#222;
+$Grey: #555;
+$White:white;
+$WhiteT:rgba(255, 255, 255, 0.9);
+
+//Archivos importados
+
+@import "./components/mixins";
+@import "./components/structures";
+@import "./components/classes";
+@import "./components/specialclasses";
+
+//Versión ordenador
+
+@import "./components/media";
