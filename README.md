@@ -3,7 +3,6 @@
 </p>
 
 # Objetos Perdidos
-__________________
 Aplicación para registrar objetos perdidos. El usuario puede consultar el listado de objetos que hay en la base de datos. Adicionalmente, el usuario puede registrarse en la app e iniciar sesión, desde donde puede subir nuevos objetos o modificar sus datos de usuario.
 
 <p align="center">
@@ -11,7 +10,6 @@ Aplicación para registrar objetos perdidos. El usuario puede consultar el lista
 </p>
 
 # Caracerísticas
-______________
 
 * HTML5, CSS3, JS
 * SASS
