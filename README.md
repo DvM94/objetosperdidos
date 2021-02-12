@@ -20,6 +20,7 @@ Aplicación para registrar objetos perdidos. El usuario puede consultar el lista
 * [Node.js](https://nodejs.org/es/)
 * [Express.js](https://expressjs.com/es/)
 * [Express-handlebars](https://www.npmjs.com/package/express-handlebars)
+* [Express-session](https://www.npmjs.com/package/express-session)
 * [Bcrypt](https://www.npmjs.com/package/bcrypt)
 * [Nodemailer](https://nodemailer.com/about/)
 * [MongoDB](https://www.mongodb.com/es)
